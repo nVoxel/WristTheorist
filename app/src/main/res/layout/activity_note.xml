@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:background="#000000"
+    tools:context=".BookActivity"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="5dp"
+        app:boxedEdges="all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/batteryTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryTextColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="83%" />
+
+        <TextView
+            android:id="@+id/noteActivityNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/clockTextView"
+            app:layout_constraintStart_toEndOf="@id/batteryTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Note12321412541124251" />
+
+        <TextClock
+            android:id="@+id/clockTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryTextColor"
+            android:format12Hour="hh:mm aa"
+            android:format24Hour="HH:mm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="13:37" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteActivityNameTextView">
+
+            <TextView
+                android:id="@+id/noteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                tools:text="Lorem ipsum." />
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.wear.widget.BoxInsetLayout>

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TheoristSerializator:jar">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/TheoristSerializer_jar</output-path>
+    <root id="archive" name="TheoristSerializer.jar">
+      <element id="module-output" name="TheoristSerializer" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.8/431fc3cbc0ff81abdbfde070062741089c3ba874/gson-2.8.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

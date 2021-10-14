@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WristTheorist</string>
+    <string name="selectBook">Select a Book</string>
+    <string name="bookMenu">Manage Book</string>
+    <string name="noTitle">No Title</string>
+    <string name="noName">No Name</string>
+    <string name="addBook">Add a Book</string>
+    <string name="refreshBook">Refresh Book</string>
+    <string name="deleteBook">Delete Book</string>
+    <string name="selectSubject">Select Subject</string>
+    <string name="selectNote">Select Subject</string>
+    <string name="note">Note</string>
+    <string name="batteryPercentage">%1$d%%</string>
+    <string name="returnToBooks">Return</string>
+    <string name="successful">Successful</string>
+    <string name="failed">Failed</string>
+    <string name="addBookDesc">Enter full URL to book. \"/\" can be replaced with \"!\", \":\" can be replaced with \",\"</string>
+    <string name="url">URL</string>
+    <string name="EmptyUrl">Enter the URL</string>
+</resources>
