@@ -30,12 +30,7 @@ or clone the project to Android Studio / IntelliJ IDEA and
 install it from there.
 
 ## Screenshots
-<img src="https://i.imgur.com/1Ciac5b.png" alt="Books" width="35%" height="35%">
-<img src="https://i.imgur.com/pu8fszl.png" alt="Subjects" width="35%" height="35%">
-<img src="https://i.imgur.com/PEsoX3b.png" alt="Notes" width="35%" height="35%">
-<img src="https://i.imgur.com/daqzKdj.png" alt="Note view" width="35%" height="35%">
-<img src="https://i.imgur.com/lzfxpXQ.png" alt="Add book" width="35%" height="35%">
-<img src="https://i.imgur.com/MrM9nCE.png" alt="Book menu" width="35%" height="35%">
+<img src="https://i.imgur.com/1Ciac5b.png" alt="Books" width="35%" height="35%"> <img src="https://i.imgur.com/pu8fszl.png" alt="Subjects" width="35%" height="35%"> <img src="https://i.imgur.com/PEsoX3b.png" alt="Notes" width="35%" height="35%"> <img src="https://i.imgur.com/daqzKdj.png" alt="Note view" width="35%" height="35%"> <img src="https://i.imgur.com/lzfxpXQ.png" alt="Add book" width="35%" height="35%"> <img src="https://i.imgur.com/MrM9nCE.png" alt="Book menu" width="35%" height="35%">
 
 # TheoristSerializer
 
