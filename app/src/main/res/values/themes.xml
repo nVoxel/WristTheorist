@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WristTheorist"
+        parent="@android:style/Theme.DeviceDefault" />
+
+    <style name="Theme.WristTheorist.DisabledSwipeDismiss"
+        parent="@android:style/Theme.DeviceDefault" >
+        <item name="android:windowSwipeToDismiss">false</item>
+    </style>
+</resources>

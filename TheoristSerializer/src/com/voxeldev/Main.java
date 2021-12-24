@@ -5,7 +5,12 @@ import com.voxeldev.models.TheoristBook;
 import com.voxeldev.models.TheoristNote;
 import com.voxeldev.models.TheoristSubject;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -45,7 +50,9 @@ public class Main {
             
             for (var noteFile : noteFiles){
                 try{
-                    subject.noteList.add(new TheoristNote(noteFile.getName().split("\\.")[0], readFile(noteFile)));
+                    String noteFileName = noteFile.getName().split("\\.")[0];
+                    subject.noteList.add(new TheoristNote(noteFileName, readFile(noteFile),
+                            noteFileName.toLowerCase().contains("img")));
                 }
                 catch (Exception e){
                     var message = e.getMessage();
@@ -80,6 +87,9 @@ public class Main {
         Scanner scanner = new Scanner(reader);
         while (scanner.hasNextLine()){
             stringBuilder.append(scanner.nextLine());
+            if (scanner.hasNextLine()) {
+                stringBuilder.append("\n");
+            }
         }
         scanner.close();
         

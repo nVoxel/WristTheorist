@@ -16,5 +16,7 @@
     <string name="failed">Failed</string>
     <string name="addBookDesc">Enter full URL to book. \"/\" can be replaced with \"!\", \":\" can be replaced with \",\"</string>
     <string name="url">URL</string>
-    <string name="EmptyUrl">Enter the URL</string>
+    <string name="emptyUrl">Enter the URL</string>
+    <string name="imageHint">Long click to title to close image</string>
+    <string name="image">Image</string>
 </resources>

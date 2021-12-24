@@ -20,7 +20,7 @@ public class AddBookActivity extends ToolActivity {
 
         binding.addBookButton.setOnClickListener(view -> {
             if (binding.addBookEditText.getText().toString().isEmpty()){
-                binding.addBookEditText.setError(getString(R.string.EmptyUrl));
+                binding.addBookEditText.setError(getString(R.string.emptyUrl));
                 return;
             }
 

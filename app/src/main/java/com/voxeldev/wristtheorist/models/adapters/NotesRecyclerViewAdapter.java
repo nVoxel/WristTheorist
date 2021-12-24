@@ -48,7 +48,12 @@ public class NotesRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
                 context.getString(R.string.noTitle) : title);
         holder.itemView.setOnClickListener(view -> {
             Intent intent = new Intent(context, NoteActivity.class);
-            intent.putExtra("note", new Gson().toJson(noteList.get(position)));
+
+            TheoristNote selectedNote = noteList.get(position);
+
+            intent.putExtra("type", selectedNote.imgUrl == null ? "text" : "img");
+            intent.putExtra("note", new Gson().toJson(selectedNote));
+
             context.startActivity(intent);
         });
     }

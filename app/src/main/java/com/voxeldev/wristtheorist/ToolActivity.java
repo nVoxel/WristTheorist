@@ -5,7 +5,7 @@ import android.content.Intent;
 import androidx.fragment.app.FragmentActivity;
 import androidx.wear.activity.ConfirmationActivity;
 
-public abstract class ToolActivity extends FragmentActivity {
+public class ToolActivity extends FragmentActivity {
 
     public void confirmAndReturnAsync(boolean success){
         runOnUiThread(() -> showConfirmation(success));

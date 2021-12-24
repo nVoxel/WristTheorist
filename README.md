@@ -20,7 +20,7 @@ for example, your Google Drive
 or [GitHub Pages](https://pages.github.com/).
 
 ## Requirements
-- Android 7.1 (API level 25, WearOS 2.0)
+- Android 7.1 (API level 25, WearOS 2.0) or later
 - Wi-FI
 
 ## Installation
@@ -30,7 +30,7 @@ or clone the project to Android Studio / IntelliJ IDEA and
 install it from there.
 
 ## Screenshots
-<img src="https://i.imgur.com/1Ciac5b.png" alt="Books" width="35%" height="35%"> <img src="https://i.imgur.com/pu8fszl.png" alt="Subjects" width="35%" height="35%"> <img src="https://i.imgur.com/PEsoX3b.png" alt="Notes" width="35%" height="35%"> <img src="https://i.imgur.com/daqzKdj.png" alt="Note view" width="35%" height="35%"> <img src="https://i.imgur.com/lzfxpXQ.png" alt="Add book" width="35%" height="35%"> <img src="https://i.imgur.com/MrM9nCE.png" alt="Book menu" width="35%" height="35%">
+<img src="https://i.imgur.com/1Ciac5b.png" alt="Books" width="35%" height="35%"> <img src="https://i.imgur.com/pu8fszl.png" alt="Subjects" width="35%" height="35%"> <img src="https://i.imgur.com/PEsoX3b.png" alt="Notes" width="35%" height="35%"> <img src="https://i.imgur.com/daqzKdj.png" alt="Note view" width="35%" height="35%"> <img src="https://i.imgur.com/lzfxpXQ.png" alt="Add book" width="35%" height="35%"> <img src="https://i.imgur.com/MrM9nCE.png" alt="Book menu" width="35%" height="35%"> <img src="https://i.imgur.com/rWwJhAb.png" alt="Image view" width="35%" height="35%">
 
 # TheoristSerializer
 
@@ -43,9 +43,11 @@ Open Command Prompt in directory containing TheoristSerializer, then execute it
 
 Generated JSON file will be in specified book folder.
 
-### Structure of a Book folder
+## Structure of a Book folder
 
 <img src="https://i.imgur.com/fO9kykT.png" alt="Usage" width="100%" height="100%">
+
+To add an image, create a text file which contains "img" in its name and put link to the image into the file. TheoristSerializer will automatically define the file as an image.
 
 ## Requirements
 Java version 11 or newer.
